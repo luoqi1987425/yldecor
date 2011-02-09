@@ -1,0 +1,249 @@
+/* 
+
+	project: internet services - 2nd edition
+	author: luka cvrk (www.solucija.com) */
+
+   
+/* default styles
+   -------------- */
+*{ margin: 0; padding: 0; }* 
+body { 
+	font: .7em Arial, ËÎÌו,sans-serif; 
+	line-height: 1.6em;
+	background: #fff; 
+	color: #444; 
+}
+
+a {	color: #E0691A;	background: inherit;}
+a:hover { color: #6C757A; background: inherit; }
+
+h1 { font: normal 2.4em "Trebuchet MS", Arial, Sans-Serif; padding: 7px 0 0 8px; margin: 0; }
+h1 a { color: #737373; background: inherit; }
+.orange { color: #E0692A; }
+sup { font-size: .5em; }
+
+h1 a, h2 a { text-decoration: none; }
+h1 a:hover, h2 a:hover { color: #FF6600; background: inherit; }
+h2 { font-size: 1.5em; margin-bottom: 5px; color: #000; background: inherit; }
+p {	margin: 0 0 5px 0; }
+
+ul { list-style : none; }
+
+/* layout
+   ------ */
+
+.content { 
+	margin: 0 auto;
+	width: 980px;
+	padding: 10px; 
+}
+
+.header { 
+	height: 70px;
+	color: #808080;
+	margin: 3px 0;
+	padding: 10px 0 0 0;
+}
+	.logo a{
+		font-size:26px;
+		font-weight:bold;
+	}
+
+.top_info {
+	float: right;
+	width: 555px;
+	padding: 5px 0 4px 0;
+	color: #808080;
+}
+
+	.top_info_left {
+		width: 200px;
+		float: left;
+	}
+
+	.top_info_right {
+		float: right;
+		width: 290px;
+		padding: 0 0 0 35px;
+		border-left: 1px solid #eee;
+	}
+
+.browse_category  {
+	width: 390px;
+	color: #FFF;
+	background: inherit;
+}
+
+.nav { 
+	clear: both;
+	font-size: 1.1em;
+	margin: 3px 0;
+	overflow:hidden;
+	background: #fff url(images/headerbg.gif) repeat-x bottom;
+}
+
+	.nav img{ 
+		width:980px;
+		height:131px;
+	}
+	
+.bar { 
+	clear: both;
+	font-size: 1.1em;
+	height: 30px; 
+	color: #FFF;
+	background: #FF9148 url(images/menubg.gif) repeat-x;
+	margin-bottom:10px;
+}
+
+	.bar li { 
+		padding: 6px 12px 6px 12px;
+		color: #FFEADC;
+		float: left; 
+	}
+	
+	.bar li.active { 
+		background: #E0691A url(images/bar.gif) repeat-x; 
+		color: #fff;
+		font-weight: bold; 
+		
+	}
+	
+	.bar li a { 
+		font-weight: bold;
+		color: #FFF; 
+		background: inherit;
+		text-decoration: none;
+	} 
+	
+/* search form */
+.search_field { 
+	background: #fff url(images/searchbg.gif) no-repeat right; 
+	color: #808080;
+	clear: both;
+	font-weight: bold;
+	padding: 7px 12px 10px 10px;
+	margin: 5px 0;
+}
+	input.search { 
+		width: 292px; 
+		border: 0;
+		background: #FFF url(images/input.gif) no-repeat;
+		padding: 4px; 
+		color: #E0691A;
+		font-weight: bold;
+		margin: 0 0 0 3px;
+	}
+	input.submit {
+		background: #E0691A url(images/submit.gif) no-repeat;
+		border: 0;
+		padding: 4px 0;
+		width: 65px;
+		margin: 0 10px 1px 0;
+		color: #FFF;
+		font: bold 1em Arial, Sans-Serif;
+	}
+	.grey { color: #808080; background: inherit; font-weight: normal; }
+	.search_form { float: right; }
+
+/* left side
+   --------- */
+
+.left {
+	float: left;
+	width: 634px;
+	margin: 0 0 10px 0;
+}
+
+.left h2 {
+	clear: both;
+	background: #E8E8E8 url(images/h2bg.gif) no-repeat center left;
+	color: #444;
+	padding: 3px 0 4px 43px;
+	font-size:14px;
+	
+	margin: 0 0 10px 0;
+}
+	.left_side {
+		float: left;
+		width: 160px;
+		padding: 0 0 0 10px;
+		margin: 10px 0 0 38px;
+	}
+	
+	
+		
+	.left_side a, .right_side a { color: #414141; background: #FFF; }
+		
+	.right_side {
+		float: right;
+		width: 280px;
+		background: #FFF url(images/dotted.gif) repeat-y;
+		color: #414141;
+		padding: 0 0 0 70px;
+		margin: 10px 0;
+	}
+	.left_box { 
+		margin: 0 0 10px 0; 
+		color: #000; 
+		background: #FFF; 
+		padding: 3px 0; 
+	}
+	
+	.left_box p{
+		font-size:1.1em;
+	}
+	
+	.left_box .image{ 
+		margin: 0 9px 10px 3px;
+	}
+	
+		
+/* right side
+   ---------- */
+		
+.right {
+	float: right;
+	width: 340px;
+	margin: 0 0 10px 0;
+}
+	.right h3 {
+		background: #BDBDBD  url(images/h3bg.gif) no-repeat center right;
+		color: #FFF;
+		padding: 6px 0 7px 5px;
+		font: bold 1.1em Tahoma, Arial, Sans-Serif;
+		margin: 0 0 3px 0;
+	}
+	.right_articles {
+		background: #f5f5f5;
+		color: #414141;
+		padding: 8px;	
+		margin: 0 0 3px 0;
+		clear:both;
+		height:60px;
+	}
+	.right_articles p{
+		font-size:12px;
+	}
+	.notice {
+		background: #eee;
+		color: #808080;
+		padding: 12px 8px;	
+		margin: 0 0 3px 0;
+	}
+	.image {
+		float: left;
+		margin: 0 9px 3px 0;
+	}
+
+/* footer
+   ------ */
+
+.footer { 
+	clear: both;
+	text-align: center;
+	padding: 10px 0;
+	border-top: 1px solid #ccc;
+	line-height: 2em;
+}
+	.footer a { color: #808080; background: #fff; }
